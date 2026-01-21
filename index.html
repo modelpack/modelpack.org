@@ -15,6 +15,15 @@
       background-color: #0D0D0D;
       background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231a1a1a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
       }
+      .list-dash {
+        display: flex;
+        gap: 10px;
+
+        &::before {
+          content: '-';
+          display: inline-block;
+        }
+      }
     </style>
   </head>
   <body class="bg-[#0D0D0D]">
@@ -89,40 +98,7 @@
                 <div class="border border-white/20 p-6 space-y-3 bg-black/50">
                   <h3 class="text-[#33FF33] text-xl font-semibold">Open Specification</h3>
                   <p class="text-white/70 text-sm leading-relaxed">The CNCF-governed open-source specification ensures consistency, enables community-driven improvements, and avoids vendor lock-in.</p>
-                  <a href="https://github.com/modelpack/model-spec/blob/main/docs/spec.md" class="text-[#33FF33] hover:text-white text-sm font-medium transition-colors inline-block mt-2">Learn more →</a>
-                </div>
-              </div>
-            </div>
-            <div class="max-w-5xl mx-auto mt-16 lg:mt-24 space-y-12">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="space-y-4">
-                  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Reference Implementations</h2>
-                  <p class="text-white/70 text-base font-normal leading-relaxed">
-                    The enterprise implementation of the ModelPack specification is KitOps, which provides:
-                  <ul class="text-white/70 text-base font-normal leading-relaxed">
-                    <li>- A comprehensive CLI for packaging, pushing, and pulling ModelPacks</li>
-                    <br>
-                    <li>- Python SDK (PyKitOps) for integration with notebooks and ML workflows</li>
-                    <br>
-                    <li>- 30+ integrations with CI/CD and MLOps tools</li>
-                    <br>
-                    <li>- Selective pulling of individual assets</li>
-                    <br>
-                    <li>- Deployment capabilities</li>
-                  </ul>
-                  <p class="text-white/70 text-base font-normal leading-relaxed">
-                    KitOps is a CNCF project, that has been adopted widely with over 150,000 downloads and is the most mature implementation of the ModelPack standard.
-                  </p>
-                  <p class="text-white/70 text-base font-normal leading-relaxed">
-                    Learn more at <a href="https://kitops.org"><u>kitops.org</u></a>
-                  </p>
-                </div>
-                <div class="p-6 bg-black/50 border border-white/20">
-                  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Install KitOps</h2>
-                  <pre class="text-sm text-white/70 overflow-x-auto p-4 bg-[#010101]"><code><span class="text-[#33FF33]">$</span> brew tap kitops-ml/kitops
-<span class="text-[#33FF33]">$</span> brew install kitops
-<span class="text-[#33FF33]">$</span> kit version
-</code></pre>
+                  <a href="https://github.com/modelpack/model-spec/blob/main/docs/spec.md" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black text-sm font-medium transition-colors inline-block mt-2">Learn more →</a>
                 </div>
               </div>
             </div>
@@ -140,12 +116,49 @@
               <span class="truncate">Get Started Now</span>
               </a>
             </div>
+            <div class="max-w-5xl mx-auto mt-16 lg:mt-24 space-y-12">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="space-y-4">
+                  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Implementations</h2>
+                  <p class="text-white/70 text-base font-normal leading-relaxed">
+                    There are two implementations of the ModelPack spec:
+                  <ol class="text-white/70 text-base font-normal leading-relaxed list-decimal list-inside space-y-6">
+                    <li><a href="https://github.com/modelpack/modctl" target="_blank" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black">Modctl</a> is the reference implementation</li>
+                    <li><a href="https://kitops.org" target="_blank" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black">KitOps</a> is the enterprise implementation that includes:
+                      <ul class="md:ml-8 mt-4 leading-relaxed space-y-2">
+                        <li class="list-dash">Python SDK (PyKitOps) for integration with notebooks and ML workflows</li>
+                        <li class="list-dash">30+ integrations with CI/CD and MLOps tools</li>
+                        <li class="list-dash">Selective pulling of individual assets</li>
+                        <li class="list-dash">215,000+ downloads globally</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p class="text-white/70 text-base font-normal leading-relaxed">
+                    Both Modctl and KitOps are vendor-neutral open source projects managed by the Cloud Native Computing Foundation.
+                  </p>
+                </div>
+                <div class="space-y-6">
+                  <div class="p-6 bg-black/50 border border-white/20">
+                    <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Install Modctl</h2>
+                    <pre class="text-sm text-white/70 overflow-x-auto p-4 bg-[#010101]"><code><span class="text-[#33FF33]">$</span> go install github.com/modelpack/modctl@main</code></pre>
+                  </div>
+
+                  <div class="p-6 bg-black/50 border border-white/20">
+                    <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Install KitOps</h2>
+                    <pre class="text-sm text-white/70 overflow-x-auto p-4 bg-[#010101]"><code><span class="text-[#33FF33]">$</span> brew tap kitops-ml/kitops
+<span class="text-[#33FF33]">$</span> brew install kitops
+<span class="text-[#33FF33]">$</span> kit version
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
         <div class="px-10 md:px-20 lg:px-40 py-16 lg:py-24 bg-[#0D0D0D] border-t border-white/20">
           <div class="max-w-5xl mx-auto space-y-12">
             <div class="text-center space-y-4">
-              <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Adoption & Support</h2>
+              <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Participation</h2>
               <p class="text-white/70 text-base font-normal leading-relaxed max-w-3xl mx-auto">
                 ModelPack is backed by leading technology companies committed to open standards for AI/ML.
               </p>
