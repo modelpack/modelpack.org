@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Source+Code+Pro%3Awght%40400%3B600%3B700&amp;family=Inter%3Awght%40400%3B500&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <title>Enterprise Support | ModelPack</title>
+    <link rel="icon" href="/assets/favicon/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      body {
+      background-color: #0D0D0D;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231a1a1a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+      }
+      .list-dash {
+        display: flex;
+        gap: 10px;
+
+        &::before {
+          content: '-';
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#0D0D0D]">
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden text-white" style='font-family: "Source Code Pro", monospace;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-white/20 px-10 py-4 sticky top-0 bg-[#0D0D0D]/80 backdrop-blur-sm z-50">
+          <div class="flex items-center gap-4">
+            <a href="./index.html"><img src="./assets/images/modelpack-logo-horizontal.png" alt="ModelPack Logo" class="h-8"></a>
+          </div>
+          <nav class="flex flex-1 justify-end items-center gap-8">
+            <div class="hidden md:flex items-center gap-9">
+              <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="./implementations.html">Implementations</a>
+              <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="./adopters.html">Adopters</a>
+              <a class="text-white text-sm font-medium leading-normal transition-colors" href="./enterprise-support.html">Enterprise Support</a>
+              <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="https://github.com/modelpack/model-spec/tree/main/docs">Docs</a>
+              <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="https://github.com/modelpack/model-spec">GitHub</a>
+            </div>
+            <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-transparent border-2 border-[#33FF33] text-[#33FF33] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#33FF33] hover:text-black transition-colors" href="https://github.com/modelpack/model-spec/blob/main/docs/getting-started.md">
+            <span class="truncate">Get Started</span>
+            </a>
+          </nav>
+        </header>
+        <main class="flex-1">
+          <div class="px-10 md:px-20 lg:px-40 py-16 lg:py-24 bg-[#0D0D0D]">
+            <div class="max-w-5xl mx-auto space-y-12">
+              <div class="space-y-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-[-0.033em] text-white">
+                  <span class="text-[#33FF33]">&gt;</span> Enterprise Support
+                </h1>
+                <p class="text-white/70 text-base md:text-lg font-normal leading-relaxed max-w-3xl mx-auto">
+                  ModelPack itself is a free, open specification with no commercial arm. Some organizations offer commercial support for ModelPack or its implementations within their products and services. They are listed here alphabetically and presented equally; a listing is not an endorsement or certification by the ModelPack project.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border border-white/20 p-8 space-y-4 bg-black/50 flex flex-col">
+                  <h2 class="text-[#33FF33] text-2xl font-semibold">Jozu</h2>
+                  <p class="text-white/70 text-sm leading-relaxed grow">
+                    Jozu offers commercial support for ModelPack and KitOps, including enterprise support subscriptions and a registry product for storing and managing ModelPack and ModelKit artifacts.
+                  </p>
+                  <div class="flex flex-wrap gap-6">
+                    <a href="https://jozu.com/kitops-modelpack-support/" target="_blank" rel="noopener noreferrer" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black text-sm font-medium transition-colors">Support offering →</a>
+                  </div>
+                </div>
+                <div class="border border-white/20 border-dashed p-8 space-y-4 bg-black/50 flex flex-col justify-center text-center">
+                  <p class="text-white/70 text-sm leading-relaxed">
+                    Does your organization provide commercial support for ModelPack? See below for how to get listed.
+                  </p>
+                </div>
+              </div>
+              <div class="max-w-5xl mx-auto bg-black/50 border border-white/20 p-10 space-y-8">
+                <div class="space-y-4">
+                  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Qualifications for listing</h2>
+                  <p class="text-white/70 text-base font-normal leading-relaxed">
+                    To be listed as an enterprise support provider, an organization must:
+                  </p>
+                  <ul class="text-white/70 text-base leading-relaxed space-y-2">
+                    <li class="list-dash"><span>Offer commercial support, services, or products for ModelPack or a conformant implementation</span></li>
+                    <li class="list-dash"><span>Publicly document the support offering (a page prospective customers can visit)</span></li>
+                    <li class="list-dash"><span>Actively participate in the ModelPack community — for example, contributing to the specification, an implementation, or the community calls</span></li>
+                  </ul>
+                </div>
+                <div class="space-y-4">
+                  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">How to get listed</h2>
+                  <p class="text-white/70 text-base font-normal leading-relaxed">
+                    Open a pull request against <a href="https://github.com/modelpack/modelpack.org" target="_blank" rel="noopener noreferrer" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black">modelpack/modelpack.org</a> adding your organization to this page with its name, a short neutral description of the offering, and a link to the public support page. If you would rather not edit HTML, <a href="https://github.com/modelpack/modelpack.org/issues/new" target="_blank" rel="noopener noreferrer" class="text-[#33FF33] hover:bg-[#33FF33] hover:text-black">open an issue</a> with the same details and a maintainer will help. Maintainers review submissions against the qualifications above.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="border-t border-solid border-t-white/20 bg-[#0D0D0D]">
+          <div class="max-w-5xl mx-auto px-5 py-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center">
+              <div class="flex items-center gap-4">
+                <span class="text-xl font-bold text-[#33FF33]">$</span>
+                <span class="text-white/70 text-sm font-normal leading-normal">ModelPack is licensed under the Apache 2.0 open source license.</span>
+              </div>
+              <div class="flex flex-wrap items-center justify-center gap-6">
+                <a class="text-white/70 hover:text-white text-sm font-normal leading-normal transition-colors" href="./implementations.html">Implementations</a>
+                <a class="text-white/70 hover:text-white text-sm font-normal leading-normal transition-colors" href="./adopters.html">Adopters</a>
+                <a class="text-white/70 hover:text-white text-sm font-normal leading-normal transition-colors" href="./enterprise-support.html">Enterprise Support</a>
+                <a class="text-white/70 hover:text-white text-sm font-normal leading-normal transition-colors" href="https://github.com/modelpack/model-spec/tree/main/docs">Docs</a>
+                <a class="text-white/70 hover:text-white text-sm font-normal leading-normal transition-colors" href="https://github.com/modelpack/model-spec">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-5xl mx-auto px-5 py-10">
+            <span class="text-white/70 text-sm font-normal leading-normal">Copyright © ModelPack a Series of LF Projects, LLC For website terms of use, trademark policy and other project policies please see lfprojects.org/policies/</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
